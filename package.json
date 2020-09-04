@@ -1,0 +1,66 @@
+{
+  "name": "myblog",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.1",
+    "connected-react-router": "^6.6.1",
+    "daggy": "^1.4.0",
+    "date-fns": "^2.10.0",
+    "draft-js": "^0.11.3",
+    "draft-js-block-breakout-plugin": "^2.0.1",
+    "draft-js-emoji-plugin": "^2.1.3",
+    "draft-js-image-plugin": "^2.0.7",
+    "draft-js-plugins-editor": "^3.0.0",
+    "formik": "^2.1.1",
+    "halogen": "^0.2.0",
+    "halogenium": "^2.3.0",
+    "immutable": "^4.0.0-rc.12",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.15",
+    "medium-draft": "^0.5.18",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "react-spinners": "^0.8.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.4.1",
+    "yup": "^0.28.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && cd build && aws s3 sync . s3://hyjpost.com --acl public-read"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.0.0",
+    "module-resolver": "^1.0.0",
+    "prettier": "^1.19.1"
+  }
+}
